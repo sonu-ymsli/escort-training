@@ -28,9 +28,10 @@ const closeAndGoToSpecifiedTab = ref();
 const refreshBtn = ref();
 const openDetailOnSameTagBtn = ref();
 const viy2InputBox_USooU = ref();
+const age = ref();
 
 const formData = reactive({
-  datafieldviy2InputBox_USooU: '',
+  datafieldviy2InputBox_USooU: '', age: '',
 });
 
 const routeClick = () => {
@@ -115,6 +116,21 @@ function openDetailOnSameTag() {
 
         ref="viy2InputBox_USooU"
         v-model="formData.datafieldviy2InputBox_USooU"
+
+        data-type="string"
+      />
+    </VueFormItem>
+
+    <VueFormItem
+
+      prop="age"
+    >
+      <VueInput
+
+        id="age"
+
+        ref="age"
+        v-model="formData.age"
 
         data-type="string"
       />
